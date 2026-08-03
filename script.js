@@ -1,8 +1,19 @@
-function mostrarMensagem() {
+function resposta(correta){
 
-    const mensagem = document.getElementById("mensagem");
+let resultado = document.getElementById("resultado");
 
-    mensagem.innerHTML =
-    "Todos merecem respeito. Se você presenciar um caso de cyberbullying, denuncie e ajude a vítima.";
+if(correta){
+
+resultado.innerHTML="🎉 Parabéns! Essa é a resposta correta. Nunca devemos compartilhar mensagens ofensivas.";
+
+resultado.style.color="green";
+
+}else{
+
+resultado.innerHTML="❌ Resposta incorreta. Compartilhar ofensas também é cyberbullying.";
+
+resultado.style.color="red";
+
+}
 
 }

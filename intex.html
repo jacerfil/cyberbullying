@@ -3,66 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyberbullying</title>
+    <title>Cyberbullying - Diga Não!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Cyberbullying</h1>
-        <p>Respeito na internet faz a diferença.</p>
-    </header>
+<header>
+    <h1>🚫 Diga Não ao Cyberbullying</h1>
+    <p>Internet é lugar de respeito e amizade.</p>
+</header>
 
-    <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#consequencias">Consequências</a>
-        <a href="#prevencao">Prevenção</a>
-    </nav>
+<nav>
+    <a href="#inicio">Início</a>
+    <a href="#oque">O que é?</a>
+    <a href="#efeitos">Consequências</a>
+    <a href="#prevencao">Prevenção</a>
+    <a href="#quiz">Quiz</a>
+</nav>
 
-    <main>
+<section class="banner" id="inicio">
+    <h2>Combater o Cyberbullying é responsabilidade de todos.</h2>
+</section>
 
-        <section id="sobre">
-            <h2>O que é Cyberbullying?</h2>
-            <p>
-                Cyberbullying é a prática de ofender, humilhar ou ameaçar
-                alguém por meio da internet, redes sociais, jogos online ou
-                aplicativos de mensagens.
-            </p>
-        </section>
+<section id="oque">
+    <h2>O que é Cyberbullying?</h2>
 
-        <section id="consequencias">
-            <h2>Consequências</h2>
-            <ul>
-                <li>Baixa autoestima</li>
-                <li>Ansiedade</li>
-                <li>Depressão</li>
-                <li>Isolamento social</li>
-            </ul>
-        </section>
+    <p>
+        Cyberbullying é o uso da internet, redes sociais, jogos online ou
+        aplicativos para ofender, ameaçar, humilhar ou espalhar mentiras sobre
+        outras pessoas.
+    </p>
 
-        <section id="prevencao">
-            <h2>Como prevenir?</h2>
-            <ul>
-                <li>Respeite as pessoas na internet.</li>
-                <li>Não compartilhe mensagens ofensivas.</li>
-                <li>Denuncie casos de cyberbullying.</li>
-                <li>Converse com um adulto de confiança.</li>
-            </ul>
+    <p>
+        Diferente do bullying tradicional, o cyberbullying pode acontecer
+        durante 24 horas por dia e atingir muitas pessoas rapidamente.
+    </p>
+</section>
 
-            <button onclick="mostrarMensagem()">
-                Clique para uma mensagem
-            </button>
+<section id="efeitos">
 
-            <p id="mensagem"></p>
-        </section>
+    <h2>Consequências</h2>
 
-    </main>
+    <div class="cards">
 
-    <footer>
-        <p>Projeto Escolar - 2026</p>
-    </footer>
+        <div class="card">
+            <h3>😢 Emocionais</h3>
+            <p>Ansiedade, tristeza e baixa autoestima.</p>
+        </div>
 
-    <script src="script.js"></script>
+        <div class="card">
+            <h3>📚 Escolares</h3>
+            <p>Queda no rendimento e falta de interesse pelos estudos.</p>
+        </div>
+
+        <div class="card">
+            <h3>👥 Sociais</h3>
+            <p>Isolamento e dificuldade para fazer amizades.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="prevencao">
+
+<h2>Como prevenir?</h2>
+
+<ul>
+<li>✔ Respeite todas as pessoas.</li>
+<li>✔ Nunca compartilhe mensagens ofensivas.</li>
+<li>✔ Denuncie conteúdos que pratiquem cyberbullying.</li>
+<li>✔ Converse com pais, professores ou responsáveis.</li>
+<li>✔ Pense antes de publicar qualquer conteúdo.</li>
+
+</ul>
+
+</section>
+
+<section id="quiz">
+
+<h2>Você sabe identificar o Cyberbullying?</h2>
+
+<p id="pergunta">
+Você acha correto compartilhar mensagens ofensivas na internet?
+</p>
+
+<button onclick="resposta(false)">Sim</button>
+<button onclick="resposta(true)">Não</button>
+
+<h3 id="resultado"></h3>
+
+</section>
+
+<footer>
+
+<p>
+Projeto Escolar - Conscientização sobre Cyberbullying
+</p>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
